@@ -1,0 +1,97 @@
+
+.icon-size{
+    font-size: 40px;
+}
+
+.purpleIcon{
+    color: #7F38EC;
+
+}
+
+.boxShadow{
+    box-shadow: inset 1px 4px 30px -1px rgba(56,53,56,1);
+
+}
+
+.bar-energized-yellow{
+    background:#800080;
+    color:white !important;
+}
+
+
+/*-------------------------------------------TERM --------------------------------------------------*/
+.icons-to-right{
+    padding-left:600px;
+}
+
+
+.text-top{
+    margin-top:5px;
+}
+.ion-chevron-right {
+    font-size: 20px !important;
+    color:#7F38EC;
+}
+
+.purpleColor{
+    background:#7F38EC;
+    color:white
+}
+
+.termListColor{
+    background: #00BFFF !important;
+
+}
+
+.item .icon .icon-badge {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    font-size: 8px;
+}
+
+
+.platform-android .bar-subheader.has-tabs-top{
+    top:93px !important;
+}
+
+.platform-android .has-subheader.has-tabs-top{
+    top:137px;
+}
+
+.noborder{
+    border-style:none;
+}
+
+
+.tab-item.tab-item, .tab-item, .tab-item {
+    background: #7F38EC !important;
+    color:white !important;
+}
+
+
+ion-item:hover a {
+    background-color: #7F38EC  !important;
+    color:white !important;
+}
+
+
+/*-------------------------------------LOGIN -----------------------------------------------*/
+.loginCss{
+    background: #00BFFF;
+    box-shadow: inset 1px 4px 30px -1px rgba(56,53,56,1);
+}
+
+.loginLogo{
+    height:60%;
+    width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoTitle{
+    color:white;
+    text-align: center;
+    text-shadow: 5px 5px 2px rgba(148, 150, 150, 0.66);
+}

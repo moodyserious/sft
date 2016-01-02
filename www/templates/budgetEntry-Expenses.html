@@ -1,0 +1,43 @@
+
+<ion-view>
+
+	<ion-nav-title align-title="center">
+		<h2 class="title">Budget Entry </h2>
+	</ion-nav-title>
+
+	<ion-content class="boxShadow padding">
+
+		<div class="item-input-inset">
+			<label class="item-input-wrapper">
+				<i class="icon ion-ios-search placeholder-icon"></i>
+				<input type="search" ng-model="searchInput"  placeholder="Search">
+			</label>
+		</div>
+
+		<ion-list ng-repeat="item in Database | filter: searchInput" class="item-icon-right">
+			<ion-item class="item item-divider item-calm">
+				<div class="row">
+					<div class="col col-75">
+						{{item.semester + ", " + item.year}}
+					</div>
+					<div class="col">
+						<a href="" class="icon-right ion-plus-circled icon-size purpleIcon" ng-click="addExpenses(item)" ></a>
+
+					</div>
+				</div>
+			</ion-item>
+
+
+			<ion-item ng-repeat="item1 in item.expenses">
+				<p ng-show="!item1.expensesAmount.length">Swipe left to enter the category and amount</p>
+				<div ng-show="item1.expensesAmount.length">
+					{{item1.expensesCategory + ", " + item1.expensesAmount}}
+				</div>
+				<i class="icon ion-chevron-right" ></i>
+
+				<ion-option-button ng-click="CallEditExpenses(item, item1)" ui-sref="app.budgetEntry.expensesEdit" class="button-positive">Edit</ion-option-button>
+			</ion-item>
+		</ion-list>
+
+	</ion-content>
+</ion-view>

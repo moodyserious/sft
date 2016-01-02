@@ -1,0 +1,34 @@
+<ion-view  >
+
+	<ion-nav-title align-title="center">
+		<h2 class="title">Budget Entry </h2>
+	</ion-nav-title>
+
+	<ion-content class="boxShadow padding">
+
+		<div class="item-input-inset">
+			<label class="item-input-wrapper">
+				<i class="icon ion-ios-search placeholder-icon"></i>
+				<input type="search" ng-model="searchInput" placeholder="Search">
+			</label>
+		        &nbsp;
+				<a href="" class="icon-right ion-plus-circled icon-size purpleIcon" ui-sref="app.budgetEntry.termAdd" ></a>
+
+		</div>
+
+		<ion-list>
+			<ion-item ng-repeat="item in Database | filter: searchInput" class="item-icon-right">
+				{{item.semester + ", " + item.year}}
+				<i class="icon ion-chevron-right" ></i>
+
+				<ion-option-button ng-click="CallEdit(item)" ui-sref="app.budgetEntry.termEdit" class="button-positive">Edit</ion-option-button>
+				<ion-option-button ng-click="removeTerm(item)" class="button-assertive">Delete</ion-option-button>
+
+			</ion-item>
+		</ion-list>
+
+
+
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-view>
+
+	<ion-nav-title align-title="center">
+		<h2 class="title"> Add Term </h2>
+	</ion-nav-title>
+
+	<ion-nav-back-button class="button-clear">
+		<i class="ion-arrow-left-c"></i> Back
+	</ion-nav-back-button>
+
+
+	<ion-content class="boxShadow padding">
+		<div class="list">
+			<form ng-submit="addTerm(semester, year)">
+			<label class="item item-input item-floating-label">
+				<span class="input-label">Semester</span>
+				<input type="text" ng-model="semester" placeholder="Semester">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">Year</span>
+				<input type="number" ng-model="year" placeholder="Year">
+			</label>
+			<button class="purpleColor button button-block" type="submit">
+				Save
+			</button>
+			</form>
+		</div>
+	</ion-content>
+</ion-view>

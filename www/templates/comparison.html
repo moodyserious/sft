@@ -1,0 +1,21 @@
+<ion-view >
+
+    <ion-nav-title align-title="center">
+        <h2 class="title">Semesters List </h2>
+    </ion-nav-title>
+
+    <ion-content class="boxShadow padding">
+
+        <ul class="list"  ng-repeat="item in Database">
+
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input ng-model="checkbox[$index]" ng-change="selectedSemesters($index, item)" type="checkbox">
+                </label>
+                {{item.semester + ", " + item.year}}
+            </li>
+
+        </ul>
+        <button ng-click="plotbar()" ui-sref="app.comparisonBar" class="button button-block button-calm">Compare</button>
+    </ion-content>
+</ion-view>

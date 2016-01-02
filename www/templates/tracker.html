@@ -1,0 +1,16 @@
+<ion-view>
+
+  <ion-nav-title align-title="center">
+    <h2 class="title">Semesters List </h2>
+  </ion-nav-title>
+
+  <ion-content class="boxShadow padding">
+
+    <ion-list>
+      <ion-item class="trackerList"  ng-repeat="item in Database" ui-sref="app.trackerPie" ng-click="plotPie(item)">
+       {{item.semester + ", " + item.year}}
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
